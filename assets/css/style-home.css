@@ -1,0 +1,217 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  background-color: #e2e2e2;
+  color: #6c6c6c;
+  font-family: 'Bree Serif', serif;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+.container {
+	width:1000px;
+}
+
+.navbar-inverse {
+  background-color: #58614e;
+  border-top: 40px solid #151515;
+  border-bottom: 0px;
+  border-radius: 0px;
+}
+.navbar-inverse .navbar-text {
+  color: #a3c6ac;
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #e2e2e2;
+  
+  
+	
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #151515;
+  background-color: transparent;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #151515;
+  background-color: transparent;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+
+
+/* Set the fixed height of the footer here */
+#footer {
+ 
+  margin-top: 10px;
+
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #eeeeee;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: -50px;
+  font:italic;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.well {
+  background-color: #eeeeee;
+}
+
+
+.warna-footer {
+
+	color:#fff;
+  text-align: left;
+	
+
+}
+
+.warna-footer-2 {
+
+	color:#1a1a1a;
+	font-weight:bold;
+
+}
+
+
+.footer-2 {
+	background-color:#58614e;
+	padding-top: 20px;
+	color: #fff;
+  padding-bottom: 25px;
+}
+
+.footer-2 li{
+	color: #000;
+
+}
+
+.footer-2 a{
+	color: #000;
+}
+
+.footer-3 {
+	background-color:#1a1a1a;
+	
+}
+
+#contact #send-email{
+  color: #fff;
+}
+
+
+
+.thumbnail {
+	background-color: transparent;
+	border:0px;
+}
+
+.isi-kontent {
+  background-color: #0f0f0f;
+  margin:50px 10px 10px 10px;
+}
+
+.btn-primary {
+  background-color: #6c6c6c;
+  border-color: #535353;
+}
+
+.featured {
+  margin-top: -50px;
+
+}
+
+.judul_quote {
+  color:#3f5297;
+  font-family: 'Bree Serif', serif;
+}
+
+.judul-chooseus {
+  color:#d94624;
+  font-weight: bold;
+  font-family: 'Bree Serif', serif;
+}
+
+.icon-chooseus {
+  color:#3f5297;
+}
+
+.judul-chooseus-1 {
+  color:#3f5297;
+  font-weight: bold;
+}
+
+.heading-text {
+  font-family: 'Bree Serif', serif;
+  color:#3f5297;
+}
+
+.heading-text-footer {
+  font-family: 'Bree Serif', serif;
+  color:#fff;
+}
+
+.heading-text-featured {
+  font-family: 'Bree Serif', serif;
+  color: #6c6c6c;
+  
+}
+
+.section-chooseus {
+  margin-bottom: -100px;
+}
+
+.btn-email{
+  background-color: #d94624;
+  width: 48px;
+  height: 48px;
+  font-size: 25px;
+  
+}
