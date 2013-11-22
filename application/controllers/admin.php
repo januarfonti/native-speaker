@@ -280,12 +280,14 @@ class Admin extends CI_Controller {
 
 
   
-	function edit_profile()
+	function manage_user()
 	{
 
 			$data['data_profile'] = $this->model_native->get_profile();
 			$data['judul']	    ='Ubah Profil';
-			$data['output']	=$this->load->view('admin/ubah_profil',$data,TRUE);
+			$html_title ="Manage User";
+			$this->load->vars( array( 'html_title' => $html_title) );
+			$data['output']	=$this->load->view('admin/manage_user',$data,TRUE);
 			$this->load->view('admin/content_wrapper_home',$data);
 			
 	}
