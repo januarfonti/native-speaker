@@ -8,6 +8,7 @@
 
     <?php if( isset($html_title) && $html_title != '' ){
      echo '<title>' . $html_title . '</title>';} ?>
+     <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.png');?>">
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
@@ -45,25 +46,22 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
             <li><?php echo anchor('/admin/', '<i class="fa fa-dashboard"></i> Home'); ?></li>
-            <li class="divider"></li>
-            <li><?php echo anchor('/admin/about/', '<span class="glyphicon glyphicon-shopping-cart"></span>  About'); ?></li>
-            <li class="divider"></li>
-            <li><?php echo anchor('/admin/facilities/', '<span class="glyphicon glyphicon-shopping-cart"></span>  Facilities'); ?></li>
-            <li class="divider"></li>
-            <li><?php echo anchor('/admin/class_study/', '<span class="glyphicon glyphicon-shopping-cart"></span>  Class and Study'); ?></li>
-            <li class="divider"></li>
-            <li><?php echo anchor('/admin/contact/', '<span class="glyphicon glyphicon-shopping-cart"></span>  Contact Us'); ?></li>
+            <li><?php echo anchor('/admin/about/', '<span class="glyphicon glyphicon-briefcase"></span>   About'); ?></li>
+            <li><?php echo anchor('/admin/facilities/', '<span class="glyphicon glyphicon-tower"></span>  Facilities'); ?></li>
+            <li><?php echo anchor('/admin/class_study/', '<span class="glyphicon glyphicon-list"></span>  Class and Study'); ?></li>
+            <li><?php echo anchor('/admin/contact/', '<span class="glyphicon glyphicon-phone-alt"></span>  Contact Us'); ?></li>
             <li><?php echo anchor('/admin/left_footer', '<span class="glyphicon glyphicon-shopping-cart"></span>  Left Footer'); ?></li>
-            <li><?php echo anchor('/admin/right_footer/edit/1', '<span class="glyphicon glyphicon-shopping-cart"></span>  Right Footer'); ?></li>
+            <li><?php echo anchor('/admin/right_footer', '<span class="glyphicon glyphicon-shopping-cart"></span>  Right Footer'); ?></li>
+            
             
             
           </ul>
 
-          <ul class="nav navbar-nav navbar-right navbar-user">
+         <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown user-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Administrator <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"></i> Edit Password</a></li>
+                <li><?php echo anchor('/admin/manage_user/', '<span class="glyphicon glyphicon-wrench"></span>   Manage User'); ?></li>
                 <li class="divider"></li>
                 <li><?php echo anchor('/auth/logout/', '<i class="fa fa-power-off"></i> Log Out'); ?></li>
                 
@@ -108,6 +106,7 @@
 
     <!-- Bootstrap core JavaScript -->
     
+    <script src="<?php echo base_url('assets/js/jquery.js');?>"></script>
     <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
     
   </body>

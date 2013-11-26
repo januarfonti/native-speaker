@@ -9,6 +9,8 @@
     <?php if( isset($html_title) && $html_title != '' ){
      echo '<title>' . $html_title . '</title>';} ?>
 
+     <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.png');?>">
+
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
 
@@ -66,7 +68,7 @@
             <li class="dropdown user-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Administrator <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                
+                <li><?php echo anchor('/admin/manage_user/', '<span class="glyphicon glyphicon-wrench"></span>  Manage User'); ?></li>
                 <li class="divider"></li>
                 <li><?php echo anchor('/auth/logout/', '<i class="fa fa-power-off"></i> Log Out'); ?></li>
                 
