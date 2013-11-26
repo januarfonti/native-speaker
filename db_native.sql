@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 22, 2013 at 02:30 AM
+-- Generation Time: Nov 26, 2013 at 11:22 AM
 -- Server version: 5.1.33
 -- PHP Version: 5.2.9
 
@@ -83,11 +83,11 @@ CREATE TABLE IF NOT EXISTS `tbl_classstudy` (
 --
 
 INSERT INTO `tbl_classstudy` (`id`, `judul`, `isi`, `file_url`) VALUES
-(1, 'Juniors (5-7)', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', NULL),
-(2, 'Children (7-11) / Pre-Teenagers & Teenagers (11-14)', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', NULL),
-(3, 'Adults', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', NULL),
-(4, 'Conversation', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', NULL),
-(5, 'Business Class', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', NULL);
+(1, 'Juniors (5-7)', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', 'b781f-180x130.gif'),
+(2, 'Children (7-11) / Pre-Teenagers & Teenagers (11-14)', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', '31885-180x130.gif'),
+(3, 'Adults', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', '9590c-180x130.gif'),
+(4, 'Conversation', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', '892fe-180x130.gif'),
+(5, 'Business Class', '<div>\r\n <strong>Monday-Friday (Senin-Jumat)</strong></div>\r\n<div>\r\n (2x1 hours / 12 weeks) @ (13.00-14.00,14.10-15.10)</div>\r\n<div>\r\n <strong>Saturday (Sabtu)</strong></div>\r\n<div>\r\n (1x1.5 hours / 16 weeks) @ (9.00-10.30)</div>\r\n', 'ba14e-180x130.gif');
 
 -- --------------------------------------------------------
 
@@ -231,11 +231,13 @@ CREATE TABLE IF NOT EXISTS `tbl_user_login` (
   `nama_lengkap` varchar(150) NOT NULL,
   `stts` varchar(30) NOT NULL,
   PRIMARY KEY (`id_user_login`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `tbl_user_login`
 --
 
 INSERT INTO `tbl_user_login` (`id_user_login`, `username`, `password`, `nama_lengkap`, `stts`) VALUES
-(1, 'admin', 'ef75d152cf5d3fc1852bf5cc9dfd080f', 'Administrator', 'administrator');
+(3, 'mimin', 'ef75d152cf5d3fc1852bf5cc9dfd080f', 'Administrator', 'administrator'),
+(4, 'mumun', 'ebc8cee5544ca21409db6c06a318c76f', 'Administrator', 'administrator'),
+(5, 'admin', 'ef75d152cf5d3fc1852bf5cc9dfd080f', 'Super Admin', 'administrator');
