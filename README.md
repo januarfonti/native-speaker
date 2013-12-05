@@ -7,10 +7,18 @@ Native Speaker
 4. Ubah konfigurasi aplikasi : application - config - config.php
 5. Ganti base_url dengan alamat website yang akan anda gunakan.
 
-Halaman admin
+
+Demo Website
+=============
+
+http://native.hol.es
+
+
+Halaman Admin
 =============
 
 http://native.hol.es/auth
+
 
 Login default
 =============
