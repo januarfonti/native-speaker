@@ -102,7 +102,7 @@ class Admin extends CI_Controller {
 			$crud->set_table('tbl_classstudy');
 			$crud->set_theme('datatables');
 			$crud->set_subject('Class Study');
-			$crud->set_field_upload('file_url','assets\uploads\files');
+			$crud->set_field_upload('file_url','assets/uploads/files');
 			$crud->unset_delete();
 			$crud->unset_print();
 			$crud->unset_export();
@@ -128,7 +128,7 @@ class Admin extends CI_Controller {
 			$crud->set_table('tbl_contactus');
 			$crud->set_theme('datatables');
 			$crud->set_subject('Contact Us');
-			$crud->set_field_upload('file_url','assets\uploads\files');
+			$crud->set_field_upload('file_url','assets/uploads/files');
 			$crud->unset_delete();
 			$crud->unset_print();
 			$crud->unset_export();
@@ -154,7 +154,7 @@ class Admin extends CI_Controller {
 			$crud->set_table('tbl_featured');
 			$crud->set_theme('datatables');
 			$crud->set_subject('Featured');
-			$crud->set_field_upload('file_url','assets\uploads\files');
+			$crud->set_field_upload('file_url','assets/uploads/files');
 			$crud->unset_add();
 			$crud->unset_delete();
 			$crud->unset_print();
@@ -181,7 +181,7 @@ class Admin extends CI_Controller {
 			$crud->set_table('tbl_quote');
 			$crud->set_theme('datatables');
 			$crud->set_subject('Quote');
-			$crud->set_field_upload('file_url','assets\uploads\files');
+			$crud->set_field_upload('file_url','assets/uploads/files');
 			$crud->unset_delete();
 			$crud->unset_add();
 			$crud->unset_print();
@@ -208,7 +208,7 @@ class Admin extends CI_Controller {
 			$crud->set_table('tbl_chooseus');
 			$crud->set_theme('datatables');
 			$crud->set_subject('Choose Us');
-			$crud->set_field_upload('file_url','assets\uploads\files');
+			$crud->set_field_upload('file_url','assets/uploads/files');
 			$crud->unset_add();
 			$crud->unset_delete();
 			$crud->unset_print();
@@ -235,7 +235,7 @@ class Admin extends CI_Controller {
 			$crud->set_table('tbl_footer_1');
 			$crud->set_theme('datatables');
 			$crud->set_subject('Left Footer');
-			$crud->set_field_upload('file_url','assets\uploads\files');
+			$crud->set_field_upload('file_url','assets/uploads/files');
 			
 			$crud->unset_print();
 			$crud->unset_export();
@@ -260,7 +260,7 @@ class Admin extends CI_Controller {
 			$crud->set_table('tbl_footer_3');
 			$crud->set_theme('datatables');
 			$crud->set_subject('Right Footer');
-			$crud->set_field_upload('file_url','assets\uploads\files');
+			$crud->set_field_upload('file_url','assets/uploads/files');
 			$crud->unset_add();
 			$crud->unset_delete();
 			$crud->unset_print();
